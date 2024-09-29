@@ -3,31 +3,314 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --body-color:#000000;
+  --containers-color:#78787825;
+  --secondcontainer-color:#474747;
+  --shape1: #5BD8FF;
+  --shape2: #FFF5C2;
+  --shape3: #EBF760;
+  --active-menu: #111111;
+  --thirdcontainer: #858282;
+  --projectbutton: #F9F9F9;
+  --font-color:#ffffff;
+  --border-color: #ffffff;
+  --footor-items-shadow: #000;
+  --contact-input: #d8d4d4b5;
+  --active-button: #8d8b8b;
+}
+*{
+  color: var(--font-color);
+  margin: 0;
+  padding: 0;
+}
+html,body{
+  width: 100%;
+  height: 100%;
+}
+body{
+  background-color: var(--body-color);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+
+/* First Section css start */
+
+
+nav{
+  width: 50%;
+  left: 25%;
+  z-index: 10;
+}
+section{
+  background-color: var(--containers-color);
+  width: 87rem;
+  height: 40.5rem;
+  border: 2px solid var(--border-color);
+  border-radius: 50px;
+}
+.active{
+  background-color: var(--body-color);
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.secondcontainer{
+  background-color: var(--secondcontainer-color);
+  width: 66rem;
+  height: 30rem;
+  top: 8rem;
+  left: 10rem;
+  border: 3px solid var(--border-color);
+  box-shadow: 0px 0px 20px 5px black;
+}
+.shape{
+  width: 20rem;
+  height: 20rem;
+  border: 3px solid var(--border-color);
+  box-shadow: 0px 0px 10px rgba(30, 30, 30, 0.572);  
+}
+.sh1{
+  background-color: var(--shape1);
+  top: 9rem;
+  left: 66rem;
+}
+.sh2{
+  background-color: var(--shape2);
+  top: 14rem;
+  left: 60rem;
+}
+.sh3{
+  background-color: var(--shape3);
+  top: 17rem;
+  left: 68rem;
+}
+.ppfimage{
+  width: 21rem;
+  height: 22rem;
+  top: 12.1rem;
+  left: 64.3rem;
+  border: 3px solid var(--border-color);
+  box-shadow: 0px 0px 10px rgba(30, 30, 30, 0.572);
+} 
+.content{
+  width: 30rem;
+  height: 11rem;
+  z-index: 11;
+  top: 16.5rem;
+  left: 19rem;
+}
+.title{
+  font-size: 70px;
+}
+.smhandles{
+  width: 20rem;
+  top: 32rem;
+  left: 25rem;
+  z-index: 10;
+}
+.githubicon{
+  width: fit-content;
+  height: fit-content;
+}
+.linkedinicon{
+  width: 2rem;
+  height: 2rem;
+}
+/* ::-webkit-scrollbar-thumb {
+  background-color: #000000;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+::-webkit-scrollbar{   
+  width: 10px;
+  border-radius: 100px;
+} */
+::-webkit-scrollbar {
+  width: 10px;
 }
+
+::-webkit-scrollbar-track {
+  background: var(--containers-color);
+  border-radius: 100px;
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: #78787825; 
+  border-radius: 100px;
+  
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #cdaaaa64; 
+}
+/* first section css ends */
+
+/* Projects section starts  */
+
+.heading{
+  font-size: 60px;
+}
+.pholder{
+  width: 77rem;
+  height: 28rem;
+  border-radius: 25px;
+}
+.item{
+  width: 24rem;
+  height: 25rem;
+  align-items: center;
+}
+.seconditem{
+  background-color: var(--thirdcontainer);
+}
+.thirditem{
+  align-items: start;
+  min-height: 15rem;
+  max-height: fit-content;
+}
+
+.titlepj{
+  width: 90%;
+  border-radius: 30px;
+  background-color: var(--thirdcontainer);
+}
+.miniconlist{
+  width: 100%;
+}
+.minicon{
+  width: fit-content;
+  height: fit-content;
+  border-radius: 20px;
+  background-color: var(--thirdcontainer);
+}
+.first-item{
+  width: 100%;
+}
+.second-item{
+  width: 100%;
+}
+.linkholderp{
+  width: 100%;
+}
+.linkholder{
+  width: fit-content;
+  height: fit-content;
+  border-radius: 20px;
+  background-color: var(--thirdcontainer);
+}
+.abtn{
+  background-color: var(--projectbutton);
+  top: 67rem;
+}
+.ri{
+  left: 60%;
+}
+.subh{
+  left: 47%;
+  top: 54.3rem;
+}
+
+.le{
+  right: 58%;
+}
+/* Projects section ends  */
+
+/* About section starts */
+
+.macontainer{
+  left: 16%;
+  height: 60%;
+  width: 70%;
+}
+.acontainers{
+  border: 2px solid var(--border-color);
+  width: 40%;
+  background-color: var(--secondcontainer-color);
+}
+.subheading{
+  background-color: var(--thirdcontainer);  
+}
+.secondcon{
+  background-color: var(--thirdcontainer);
+}
+.mscon{
+  width: fit-content;
+  border: none;
+  background-color: var(--thirdcontainer);
+}
+/* About section ends */
+
+/* Contact section starts */
+
+.mcontainer{
+  border: 2px solid var(--border-color);
+  height: 60%;
+  width: 70%;
+  left: 16%;
+  background-color: var( --secondcontainer-color);
+  align-items: center;
+}
+.ccontainer{
+  border: none;
+  width: 70%;
+  background-color: var(--contact-input);
+}
+.ipdiv{
+  height: 11%;
+}
+.ip{
+  color: var(--font-color);
+  top: -9px;
+}
+.ip::placeholder{
+  color: var(--font-color);
+}
+.ip:focus{
+  outline: none;
+}
+.ta{
+  color: var(--font-color);
+  height: 100%;
+  width: 100%;
+}
+.ta::placeholder{
+  color: var(--font-color);
+}
+.ta:focus{
+  outline: none;
+}
+.tacon{
+  height: 30%;
+}
+.cbuttons{
+  width: 70%;
+}
+.btn{
+  background-color: var(--contact-input);
+}
+.btn:hover{
+  background-color: var(--active-button);
+}
+
+/* Contact section ends */
+
+
+/* Footer section starts */
+
+footer{
+  background-color: var(--containers-color);
+  width: 87rem;
+  height: 15rem;
+  border: 2px solid var(--border-color);
+  border-radius: 50px;
+  justify-content: space-evenly;
+}
+.footermain{
+  width: 20%;
+  justify-content: space-evenly;
+}
+.subfootermain{
+  background-color: var( --secondcontainer-color);
+  display: flex;
+  border: 2px solid var(--border-color);
+  justify-content: center;
+  box-shadow: 0px 0px 20px 1px var(--footor-items-shadow);
+}
+
+/* Footer section ends */
